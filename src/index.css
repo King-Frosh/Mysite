@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* Class-based dark mode: `dark:` utilities respond to the .dark class on <html>
-   (toggled by useTheme) instead of the OS prefers-color-scheme media query. */
-@custom-variant dark (&:where(.dark, .dark *));
-
 @layer base {
   html {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

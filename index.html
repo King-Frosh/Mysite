@@ -19,22 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
-    <!-- Apply saved/system theme before first paint to prevent a flash of the wrong theme -->
-    <script>
-      (function () {
-        try {
-          var saved = localStorage.getItem('froshhub_theme');
-          var isDark =
-            saved === 'dark' ||
-            (saved !== 'light' &&
-              window.matchMedia('(prefers-color-scheme: dark)').matches);
-          if (isDark) {
-            document.documentElement.classList.add('dark');
-          }
-        } catch (e) {}
-      })();
-    </script>
-    <body class="bg-slate-50 text-slate-900 antialiased selection:bg-cyan-500 selection:text-white dark:bg-[#070b14] dark:text-slate-100 transition-colors duration-300">
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-cyan-500 selection:text-white dark:bg-[#070b14] dark:text-slate-100 transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
